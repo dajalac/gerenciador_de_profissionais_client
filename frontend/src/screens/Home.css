@@ -1,0 +1,31 @@
+.home-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-screen-items{
+    width: 70%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    padding: 8px 8px;
+    
+}
+
+@media (max-width: 800px){
+    .home-screen-items{
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
+    .home-screen-items{
+        width: 95%;
+        margin-top: 3%;
+        grid-template-columns: 1fr
+    }
+}
