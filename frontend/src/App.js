@@ -17,13 +17,14 @@ function App() {
       <Router>
       <Navbar/>
       <Switch>
-        <Route path ='/' exact component={Home}/>
+        <Route exact path ='/' component={Home}/>
         <Route path ='/novoProfissional' exact component={NovoProfissional}/>
         <Route path ='/novaProfissao' exact component={NovaProfissao}/>
         <Route path ='/listarProfissionais' exact component={ListarProfissionais}/>
         <Route path ='/listarProfissoes' exact component={ListarProfissoes}/>
         <Route path ='/editarProfissao' exact component={EditarProfissao}/>
-        <Route path ='/editarProfissional' exact component={EditarProfissional}/>
+        <Route path ='/editarProfissional' exact component={EditarProfissional}></Route>
+        <Route component = {Home}/>
         
       </Switch>
       </Router>
